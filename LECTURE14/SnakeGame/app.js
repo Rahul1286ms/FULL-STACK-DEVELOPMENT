@@ -59,16 +59,6 @@ const snake = {
         }
     },
 
-    hasCollided: function () {
-        const headX = this.cells[this.cells.length - 1].x;//snake ke head ka x coordinate 
-        const headY = this.cells[this.cells.length - 1].y;//snake ke head ka y coordinate
-
-        for (let cell of this.cells) {
-            if (headX === cell.x * cs && headY === cell.y * cs) {
-                gameOver = true;
-            }
-        }
-    },
     updateSnake: function () {
         const headX = this.cells[this.cells.length - 1].x;//snake ke head ka x coordinate 
         const headY = this.cells[this.cells.length - 1].y;//snake ke head ka y coordinate
@@ -95,12 +85,24 @@ const snake = {
             if (nextX * cs < 0) {
                 gameOver = true;
             }
+            for (let i = 0; i < this.cells.length - 1; i++) {
+
+                if (headX === this.cells[i].x && headY === this.cells[i].y) {
+                    gameOver = true;
+                }
+            }
         }
         else if (this.direction === 'up') {
             nextX = headX;
             nextY = headY - 1;
             if (nextY * cs < 0) {
                 gameOver = true;
+            }
+            for (let i = 0; i < this.cells.length - 1; i++) {
+
+                if (headX === this.cells[i].x && headY === this.cells[i].y) {
+                    gameOver = true;
+                }
             }
         }
         else if (this.direction === 'down') {
@@ -109,12 +111,24 @@ const snake = {
             if (nextY * cs >= H) {
                 gameOver = true;
             }
+            for (let i = 0; i < this.cells.length - 1; i++) {
+
+                if (headX === this.cells[i].x && headY === this.cells[i].y) {
+                    gameOver = true;
+                }
+            }
         }
         else {
             nextX = headX + 1;
             nextY = headY;
             if (nextX * cs >= W) {
                 gameOver = true;
+            }
+            for (let i = 0; i < this.cells.length - 1; i++) {
+
+                if (headX === this.cells[i].x && headY === this.cells[i].y) {
+                    gameOver = true;
+                }
             }
         }
 
@@ -198,7 +212,6 @@ function draw() {
 //update
 function update() {
     snake.updateSnake();
-    snake.hasCollided();
 }
 
 //gameloop

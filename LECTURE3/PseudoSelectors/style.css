@@ -1,0 +1,75 @@
+div{
+    height: 200px;
+    width: 200px;
+    border:2px solid black ;
+    background-color: lightseagreen;
+}
+
+div:hover{
+    background-color: aqua;
+}
+
+input:focus{
+    background-color: burlywood;
+}
+
+a[href="http://google.com"]:visited{
+    color:red;
+    text-decoration: none;
+}
+
+h1:active{
+    color:aqua;
+}
+
+p::first-letter{
+    font-size: 30px;
+    color:blue;
+}
+
+/*Structural Pseudo Classes */
+
+li:nth-of-type(odd){
+    color: red;
+}
+
+li:nth-of-type(even){
+    color: blue;
+}
+
+li:nth-of-type(2n+3){
+    color:green;
+}
+
+li:nth-of-type(3){
+    color:aqua;
+}
+
+li:first-child{
+    color: purple;
+}
+
+li:last-child{
+    color:seagreen;
+}
+
+article:last-of-type{
+    color:sienna;
+}
+
+h1::after{
+    color:red;
+    border:1px dashed green;
+    content:"After h1"
+}
+
+h1::before{
+    color:green;
+    border: 1px dashed red;
+    content: "Before h1";
+}
+
+h2::after{
+    color: red;
+    content: "&lt;";
+}

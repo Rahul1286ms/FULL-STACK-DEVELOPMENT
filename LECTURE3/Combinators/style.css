@@ -1,0 +1,31 @@
+/*Decendent Combinator*/
+
+/*select all strong tags which is inside article*/
+article strong{
+    color:red;
+}
+/*select all a tags inside ul tag*/
+ul a{
+     color:green;
+}
+
+/*Child Combinator*/
+
+/*select all those li tags which are direct children of ul tag*/
+ul > li{
+    border-top: 2px solid orange;
+}
+
+/*Adjacent Combinator*/
+
+/*all paragraph adjacent to h4 are selected*/
+h4 + p{
+     color: blue;
+}
+
+/*General Combinator*/
+
+/**/
+h2 ~ p{
+    color:violet;
+}

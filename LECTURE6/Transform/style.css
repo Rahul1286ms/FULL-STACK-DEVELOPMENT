@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+}
+h1{
+    color:rgb(182, 13, 13);
+    text-align:center;
+    margin-top: 100px;
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 1 #01070c;
+    transition-duration: 2s;
+}
+
+h1:hover{
+    /* transform: translateX(700px); */
+    /* transform: translateY(-567px); */
+    /* transform: rotateX(360deg); */
+    /* transform: rotateY(360deg); */
+    /* transform: rotateZ(3turn); */
+    /* transform: scaleX(2);
+    transform: scaleY(2); */
+    transform:scale(2);
+
+    cursor: pointer;
+}

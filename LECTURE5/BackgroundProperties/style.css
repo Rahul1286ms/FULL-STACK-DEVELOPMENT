@@ -1,0 +1,15 @@
+section{
+    width: 60vw;
+    margin: 50px auto;
+    border: 2px solid #ccc;
+    height: 50vh;
+    background-image: url('https://images.unsplash.com/photo-1643581360569-b34fb16cdc4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: cornflowerblue;
+    background-position:  center;
+}
+
+h1{
+    text-align: center;
+}

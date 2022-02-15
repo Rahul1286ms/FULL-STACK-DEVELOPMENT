@@ -1,0 +1,37 @@
+/*Element Selector */
+h1{
+    color:green;
+}
+strong{
+    color: red;
+}
+
+/*ID Selector*/
+#special{
+    text-transform: uppercase;
+}
+
+/*Class Selector*/
+.one{
+    color: blue;
+    text-decoration: line-through;
+}
+
+/*Attribute Selectors*/
+a[href='http://google.com']{
+    font-size: 24px;
+    color:palevioletred;
+}
+
+input[type='text']{
+    background-color: peachpuff;
+}
+input[disabled]{
+    background-color: royalblue;
+}
+
+/*Universal Selector*/
+
+*{
+  border: 1px solid gray;
+}
